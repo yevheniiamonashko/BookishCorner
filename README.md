@@ -1,7 +1,3 @@
-**About**
-
-This project was developed as part of an individual study assignment for the WebBasics course at Saxion University of Applied Sciences.
-
 
 **BookishCorner**
 
