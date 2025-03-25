@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddBook</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body data-page="book-add-page">
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="header-left">
+                <img src="img/open-book.png" alt="Website Logo" class="logo">
+                <h1 class="left_header">Bookish Corner</h1>
+            </a>
+            <div class="header-right">
+                <a href="index.html" class="btn btn-black  btn-radius btn-lg">Back</a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="page-content page-user">
+        <div class="container">
+
+            <h2 class="title mt-30px text-center">Add book</h2>
+
+            <div class="user-hold mt-30px">
+                <div class="user-content">
+
+                    <form id="bookForm" data-endpoint="http://localhost:3000/books" data-method="POST"
+                        class="form-style form-book form-style-minimal mb-30px">
+                        <input type="hidden" name="user_id" value="">
+
+                        <div class="input-hold">
+                            <input type="text" class="input" placeholder="Title" name="title">
+                        </div>
+
+                        <div class="input-hold">
+                            <select name="author_id" class="input" id="js-select-author">
+
+                            </select>
+                        </div>
+
+                        <div class="input-hold">
+                            <textarea name="description" class="input textarea-autogrow"
+                                placeholder="Write description"></textarea>
+                        </div>
+
+                        <div class="input-hold input-hold-btn-file">
+                            <label hover-base class="btn btn-file">
+                                Select image
+                                <input type='file' name="img" />
+                            </label>
+                            <div class="btn-file-preview-hold">
+                                <img src="./img/empty-image.png" alt="" class="btn-file-preview-img" id="preview-img">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-black">Add book</button>
+                    </form>
+                </div>
+                <div class="user-info">
+                    <h2 class="user-name">-</h2>
+                    <ul class="user-info-list">
+                        <li class="user-info-list-li">
+                            <a href="./user-page.html" class="user-info-list-link">Go to profile</a>
+                        </li>
+                        <li class="user-info-list-li">
+                            <a href="./index.html" class="user-info-list-link js-user-logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <ul class="list-nav list-nav-left">
+                        <li class="footer-copyright">© 2024 <span>Bookish Corner</span></li>
+                    </ul>
+                    <ul class="list-nav list-nav-right">
+                        <li><a href="./author-list.html">List of authors</a></li>
+                        <li><a href="./user-login.html">Login</a></li>
+                        <li><a href="./user-reg.html">Registration</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/userPage.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

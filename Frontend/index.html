@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookish Corner</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+
+<body data-page="home">
+
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="header-left">
+                <img src="img/open-book.png" alt="Website Logo" class="logo">
+                <h1 class="left_header">Bookish Corner</h1>
+            </a>
+            <div class="header-right">
+                <a href="author-list.html" class="btn">List of authors</a>
+                <img src="img/book.png" alt="Author List Logo" class="right-logo">
+            </div>
+        </div>
+    </header>
+
+    <div class="search-section">
+        <div class="container text-center">
+            <h2 class="title">Find a book of your choice!</h2>
+
+            <form action="#" class="search">
+                <div class="search-section-btn-hold">
+                    <label class="search-label btn-radio-label">
+                        <input type="radio" name="type-search" value="books" checked>
+                        <span class="btn btn-radio btn-beige">Books</span>
+                    </label>
+                    <label class="search-label btn-radio-label">
+                        <input type="radio" name="type-search" value="authors">
+                        <span class="btn btn-radio btn-beige">Authors</span>
+                    </label>
+                </div>
+                <div class="search-bar input-hold">
+                    <button
+                        class="input-icon btn btn-transparent btn-icon btn-radius material-symbols-outlined">search</button>
+                    <input class="search-input input" type="search" placeholder="Search" name="search"
+                        autocomplete="off" required>
+                </div>
+            </form>
+
+
+
+
+        </div>
+    </div>
+
+    <main class="search-result hide">
+        <section class="container">
+
+            <h2 class="title mt-30px">Your search result</h2>
+
+            <div class="content-col-3 mt-30px mb-30px" id="search-list">
+
+            </div>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <ul class="list-nav list-nav-left">
+                        <li class="footer-copyright">© 2024 <span>Bookish Corner</span></li>
+                    </ul>
+                    <ul class="list-nav list-nav-right">
+                        <li><a href="./author-list.html">List of authors</a></li>
+                        <li><a href="./user-login.html">Login</a></li>
+                        <li><a href="./user-reg.html">Registration</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
